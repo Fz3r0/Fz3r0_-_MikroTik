@@ -5,6 +5,4 @@ El MikroTik siempre trae configs default que aunque se reinicie de fábrica las 
 
 1. System > Reset Config:
 
-![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/d958e184-ab50-42d6-89d1-a9de8c78ef87)
-
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/de04c3d9-83ea-4967-8d6c-fabf14c638b4)
