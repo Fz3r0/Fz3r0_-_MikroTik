@@ -46,6 +46,13 @@ Se debe agregar un cloud para cada MikroTik, ya está listo para obtener DHCP y 
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/2180a7ae-eb7d-45c2-86ba-7eac3bd1d3a8)
 
+- Entro por winbox:
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/594ea0ca-9c7e-45f7-847d-e2ecad6894a5)
+
+
+
+
 
 
 
