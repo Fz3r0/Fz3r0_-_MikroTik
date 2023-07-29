@@ -27,7 +27,11 @@
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/da4689a4-adf3-494d-9e43-f5d594c2c568)
 
+### Update de VM
 
+- En caso que se necesite hacer update solo hacer click en el "ok" de la ventana azul y hacer un upgrade con la versión mas reciente _(la de hasta arriba de la lista)_
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/186eea59-f922-440b-b2cc-65a741638e24)
 
 
 
