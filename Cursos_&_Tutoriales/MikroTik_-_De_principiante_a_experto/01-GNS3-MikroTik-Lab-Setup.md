@@ -54,6 +54,11 @@ Se debe agregar un cloud para cada MikroTik, ya está listo para obtener DHCP y 
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/d1a8eae7-8878-4095-850c-c3445e53324d)
 
+- Hyper Vuala
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/c73e3d30-ad41-4a82-847f-5e045698714f)
+
+
 
 
 
