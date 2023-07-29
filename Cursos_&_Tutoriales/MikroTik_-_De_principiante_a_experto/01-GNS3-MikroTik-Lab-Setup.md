@@ -50,6 +50,9 @@ Se debe agregar un cloud para cada MikroTik, ya está listo para obtener DHCP y 
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/594ea0ca-9c7e-45f7-847d-e2ecad6894a5)
 
+- Vualá
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/d1a8eae7-8878-4095-850c-c3445e53324d)
 
 
 
