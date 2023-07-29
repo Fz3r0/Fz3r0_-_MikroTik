@@ -42,6 +42,10 @@ Se debe agregar un cloud para cada MikroTik, ya está listo para obtener DHCP y 
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/77ef6cc3-ff98-4de2-b5d7-e6d49784e339)
 
+- Revisar la IP del MikroTik para poder entrar _(ya que eso de los neighbors aveces es una patada en los huevos)_
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/2180a7ae-eb7d-45c2-86ba-7eac3bd1d3a8)
+
 
 
 
