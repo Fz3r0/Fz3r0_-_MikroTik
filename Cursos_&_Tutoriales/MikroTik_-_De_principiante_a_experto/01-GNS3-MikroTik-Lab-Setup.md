@@ -36,6 +36,12 @@ kfwI99BWFKZnxkIpNU
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/234f5752-08ac-414a-80de-e6522b4497e7)
 
+## Agregar Nube para salida a Internet
+
+Se debe agregar un cloud para cada MikroTik, ya está listo para obtener DHCP y simula conectar Internet y administración desde nuestra PC (y alcanzar el NAT)
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/77ef6cc3-ff98-4de2-b5d7-e6d49784e339)
+
 
 
 
