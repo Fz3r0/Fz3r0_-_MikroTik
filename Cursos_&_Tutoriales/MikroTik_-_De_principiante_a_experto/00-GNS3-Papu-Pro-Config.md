@@ -33,6 +33,11 @@
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/186eea59-f922-440b-b2cc-65a741638e24)
 
+### Inicio Exitoso
+
+- Así es como se debe ver el inicio del GNS3 con un servidor remoto:
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/ba83b470-f3e2-430f-a500-9cd0bac08cd4)
 
 
 
