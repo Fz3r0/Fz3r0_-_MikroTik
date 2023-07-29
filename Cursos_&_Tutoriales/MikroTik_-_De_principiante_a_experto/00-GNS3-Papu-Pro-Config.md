@@ -25,6 +25,7 @@
 
 ### Configurando Remote Server
 
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/da4689a4-adf3-494d-9e43-f5d594c2c568)
 
 
 
