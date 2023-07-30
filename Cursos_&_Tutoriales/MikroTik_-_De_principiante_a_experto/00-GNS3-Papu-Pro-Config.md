@@ -7,6 +7,8 @@
 
 - La finalidad es configurar un GNS3 con IP fija, en modo servidor remoto, es la manera más pro de hacerlo.
 
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/5ac9dba1-f1fb-47fa-b340-79a94ffb1836)
+
 ---
 
 ### Settings de GNS3 VM
