@@ -5,9 +5,12 @@
 
 ## Config Pro
 
-- La finalidad es configurar un GNS3 con IP fija, en modo servidor remoto, es la manera más pro de hacerlo.
+La finalidad es configurar un GNS3 con IP fija, en modo servidor remoto, es la manera más pro de hacerlo.
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/5ac9dba1-f1fb-47fa-b340-79a94ffb1836)
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/cb3e30c1-43dc-49d8-874b-5007e0583f31)
+
 
 ---
 
