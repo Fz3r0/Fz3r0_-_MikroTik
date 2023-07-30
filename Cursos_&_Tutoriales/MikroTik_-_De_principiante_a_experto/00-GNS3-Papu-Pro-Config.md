@@ -5,13 +5,17 @@
 
 ## Config Pro
 
-- La finalidad es configurar un GNS3 con IP fija, en modo servidor, es la manera más pro de hacerlo.
+- La finalidad es configurar un GNS3 con IP fija, en modo servidor remoto, es la manera más pro de hacerlo.
+
+---
 
 ### Settings de GNS3 VM
 
 - Remover una de las interfaces que vienen por default y dejar únicamente 1 como NAT _(Para evitar confusiones en un futuro)_
 
-![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/0f2b113b-71b9-45c8-89f4-6c891fe3dee9)
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/3d7bfd26-efe5-4a05-9d04-ed7e13c750e6)
+
+---
 
 ### Iniciar GNS3 Por primera vez
 
@@ -23,19 +27,25 @@
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/797828e3-3ce2-46b0-8375-aede3485c33f)
 
+---
+
 ### Configurando Remote Server
+
+Es mejor utilizar el GNS3 como un remote server alojado en la VM, en lugar que local que es como viene por default
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/da4689a4-adf3-494d-9e43-f5d594c2c568)
 
+---
+
 ### Update de VM
 
-- En caso que se necesite hacer update solo hacer click en el "ok" de la ventana azul y hacer un upgrade con la versión mas reciente _(la de hasta arriba de la lista)_
+En caso que se necesite hacer update solo hacer click en el "ok" de la ventana azul y hacer un upgrade con la versión mas reciente _(la de hasta arriba de la lista)_
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/186eea59-f922-440b-b2cc-65a741638e24)
 
 ### Inicio Exitoso
 
-- Así es como se debe ver el inicio del GNS3 con un servidor remoto:
+Así es como se debe ver el inicio del GNS3 con un servidor remoto:
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/ba83b470-f3e2-430f-a500-9cd0bac08cd4)
 
