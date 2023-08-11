@@ -18,7 +18,16 @@ Los 3 pasos de configuración para salir a Internet de LAN @ WAN son:
     - `Opción 4`: La IP de X o Y Ruta Layer 3 que haya arriba!!! Osea hacia "afuera" pues! 
 <br>
 
+### `Usando IP Estática:`
+
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/316804f1-51c9-4647-98b3-52283e4c60d3)
+
+### `Usando DHCP:`
+
+- En este caso solo hay que crear un `DHCP Client` utilizando la interfaz necesaria.
+- OJO! Es por eso hay una `D` de `Dynamic` en la IP ;)
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/82319b1b-5512-45dc-8038-6da8591bbe60)
 
 ---
 
