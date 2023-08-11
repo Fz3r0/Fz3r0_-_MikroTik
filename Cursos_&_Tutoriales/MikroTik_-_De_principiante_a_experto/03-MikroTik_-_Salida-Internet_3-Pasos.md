@@ -20,7 +20,7 @@ Los 3 pasos de configuración para salir a Internet de LAN @ WAN son:
 
 ### `Usando IP Estática:`
 
-![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/316804f1-51c9-4647-98b3-52283e4c60d3)
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/41ad5448-55da-42dd-b7ea-f9c2ada29049)
 
 ### `Usando DHCP:`
 
