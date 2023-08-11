@@ -33,3 +33,17 @@ Los 3 pasos de configuración para salir a Internet de LAN @ WAN son:
 
 ### 2. Crear regla de Routeo con el Gateway de ISP/WAN/Public
 
+- **En caso de usar `DHCP` se pondrá la default route sola, y de hecho se puede activar o desactivar en el DHCP Client.**
+- **En caso de usar `IP Estática`, pasar al paso 2**
+
+Para este ejemplo lo desactivaré para poner la Default Route de manera manual para que sea lo más cercano a una IP estática de un ISP:
+
+### 1. Quitando la Static Route del DHCP Client
+
+- Solo cambiar a `no` el default que viene en el DHCP Client:
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/6d90f574-75a1-4978-a790-2cb21af778bf)
+
+### 2. Crear Regla de Routeo
+
+
