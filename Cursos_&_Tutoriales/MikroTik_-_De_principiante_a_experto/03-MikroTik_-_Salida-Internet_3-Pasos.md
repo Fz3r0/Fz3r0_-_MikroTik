@@ -71,7 +71,27 @@ Ojo!!! En caso de fallar en el Lab, es posible el GW sea el .2 :P
 
 ---
 
-### 3. 
+### 3. Crear reglas NAT para enmascarar el tráfico de Private/LAN hacia ISP/WAN/Public(Internet)
+
+1. La regla de NAT se crea como una politica del Firewall:
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/18453fe6-e317-4167-b568-e336649259c6)
+
+2. Para finalizar hay que seleccionar la opción de `masquerade`, osea, enmascarar la IP Privada para poder salir a Internet (Público):
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/248c79fc-5237-4016-9bd1-e004b14a6a5c)
+
+3. Se puede ver cono hay tráfico después de unos segundos:
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/596ec257-8160-47dc-9506-6b31cab02fc3)
+
+---
+
+<br><br>
+
+
+
+
 
 
 
