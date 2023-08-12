@@ -61,6 +61,10 @@ El resultado sería este en el caso del Lab:
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/bbf16cca-a91d-4812-977e-9ffdf62d961e)
 
+Finalmente se verá así con el mensaje de `reachable`:
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/5fad25f8-20e7-4674-854c-919b4df418f9)
+
 
 
 
