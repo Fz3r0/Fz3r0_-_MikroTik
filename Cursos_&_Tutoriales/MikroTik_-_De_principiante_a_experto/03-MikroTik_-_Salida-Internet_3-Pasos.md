@@ -65,6 +65,13 @@ Finalmente se verá así con el mensaje de `reachable`y también lo puedo coment
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/eaf1c464-915b-47ea-8a31-8fc8c65fd670)
 
+Ojo!!! En caso de fallar en el Lab, es posible el GW sea el .2 :P
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/e6e97b96-509f-48b6-b832-5f32ef102db2)
+
+---
+
+### 3. 
 
 
 
