@@ -46,4 +46,10 @@ Para este ejemplo lo desactivaré para poner la Default Route de manera manual p
 
 ### 2. Crear Regla de Routeo
 
+1. Crear una nueva ruta con la default route de `0.0.0.0`:
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/39e695d8-56e5-43c8-8069-dd7ed8124f60)
+
+2. Agregar el Gateway de mi salida a Internet
+    - En la vida real con una IP estática será el GW que me asigna el ISP _(Normalmente un número + o - de la IP asignada ya que son /30)_ 
 
