@@ -1,4 +1,4 @@
-## Salida a Internet
+# Salida a Internet (Winbox)
 
 Los 3 pasos de configuración para salir a Internet de LAN @ WAN son:
 
