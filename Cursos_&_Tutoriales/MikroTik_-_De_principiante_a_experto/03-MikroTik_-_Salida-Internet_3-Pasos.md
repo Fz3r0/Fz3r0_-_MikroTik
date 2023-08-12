@@ -55,9 +55,9 @@ Para este ejemplo lo desactivaré para poner la Default Route de manera manual p
     - En la vida real con una IP estática será el GW que me asigna el ISP _(Normalmente un número + o - de la IP asignada ya que son /30)_
     - En el laboratorio es la IP asignada a la Interfaz NAT del VMware, se puede sacar del VMware (vmnet 8 en mi caso)
 
-![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/ac09f20d-e2a6-4c1d-8bf4-e2f37eb24ea4)
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/3b59de48-18df-49a2-90f1-441fe1ef3cd8)
 
-![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/7658823a-37b5-4b64-8051-b6a1535e40e0)
+El resultado sería este en el caso del Lab:
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/bbf16cca-a91d-4812-977e-9ffdf62d961e)
 
