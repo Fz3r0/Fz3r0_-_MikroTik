@@ -57,6 +57,8 @@ Para este ejemplo lo desactivaré para poner la Default Route de manera manual p
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/7658823a-37b5-4b64-8051-b6a1535e40e0)
 
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/bbf16cca-a91d-4812-977e-9ffdf62d961e)
+
 
 
 
