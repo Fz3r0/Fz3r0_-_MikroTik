@@ -51,5 +51,12 @@ Para este ejemplo lo desactivaré para poner la Default Route de manera manual p
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/39e695d8-56e5-43c8-8069-dd7ed8124f60)
 
 2. Agregar el Gateway de mi salida a Internet
-    - En la vida real con una IP estática será el GW que me asigna el ISP _(Normalmente un número + o - de la IP asignada ya que son /30)_ 
+   
+    - En la vida real con una IP estática será el GW que me asigna el ISP _(Normalmente un número + o - de la IP asignada ya que son /30)_
+    - En el laboratorio es la IP asignada a la Interfaz NAT del VMware, se puede sacar del VMware (vmnet 8 en mi caso)
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/7658823a-37b5-4b64-8051-b6a1535e40e0)
+
+
+
 
