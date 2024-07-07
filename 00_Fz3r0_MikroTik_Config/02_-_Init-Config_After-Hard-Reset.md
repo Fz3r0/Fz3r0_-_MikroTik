@@ -1,4 +1,4 @@
-# 02 - Init Config & Salida a Internet
+# 02 - Init Config después de Hard-Reset
 
 ## Recursos
 
