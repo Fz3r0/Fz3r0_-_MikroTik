@@ -1,4 +1,4 @@
-# 02 - Corrar Default-Config después de Hard-Reset
+# 02 - Borrar Default-Config después de Hard-Reset
 
 ## Recursos
 
