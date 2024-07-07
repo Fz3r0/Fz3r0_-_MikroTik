@@ -19,7 +19,7 @@
 
 ### 2. Conectar WAN a ETH1
 
-![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/25b5949b-ba17-481f-b465-0ff3e6b2dc3b)
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/435ba66b-2dc4-40c6-b5c8-18160c9666c6)
 
 ---
 
