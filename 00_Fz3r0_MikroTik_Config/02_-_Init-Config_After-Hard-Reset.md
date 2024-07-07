@@ -38,6 +38,10 @@ Los MikroTik ya vienen con una pequeña pre-configuración que se debe borrar pa
 
 **Opción UI**:
 
+1. Ir a: **`System > Reset Configuration`**
+2. Seleccionar la opción `No Default Configuration` y `No Backup`
+3. Hacer click en `Reset Configuration`
+
 **Opción CLI**:
 
 1. Entrar a consola de Winbox y escribir el siguiente comando:
