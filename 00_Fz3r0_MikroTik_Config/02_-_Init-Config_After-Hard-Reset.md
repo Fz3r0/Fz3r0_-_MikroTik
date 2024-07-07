@@ -7,14 +7,20 @@
 
 ## Configuración
 
-### 1. Entrar con MAC
+### 1. Entrar con MAC o IP default
 
 1. Conectar MikroTik
 2. Abrir Winbox
-3. Entrar con MAC <br><br>
+3. Entrar con MAC o  IP default <br><br>
     - User: `admin`
     - Pass: _vacío_
 
+**Opción MAC:**
+
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/146bf39a-9aac-46d5-857f-f69fd19c4d76)
- 
+
+**Opción IP:**
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/1698aaa0-a32b-4e92-bc07-5fd2dfaba63c)
+
 
