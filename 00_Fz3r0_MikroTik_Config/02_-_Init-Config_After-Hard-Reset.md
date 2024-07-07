@@ -1,4 +1,4 @@
-# 02 - Init Config después de Hard-Reset
+# 02 - Corrar Default-Config después de Hard-Reset
 
 ## Recursos
 
