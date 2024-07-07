@@ -16,7 +16,7 @@ La manera de saber que se hizo bien el Hard-Reset es que se verá la siguiente p
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/3f044f73-4085-475c-a402-f2cedf110698)
 
-En caso de oprimir pot más tiempo ocurren las siguientes opciones, **pero no se hace Hard-Reset**: 
+En caso de oprimir por más tiempo ocurren las siguientes opciones, **pero no se hace Hard-Reset**: 
 
 The RouterBOOT reset button has the following functions. Press the button and apply the power, then:
 
