@@ -32,3 +32,20 @@
 
 ---
 
+### 3. Borrar la Init-Config-Default
+
+Los MikroTik ya vienen con una pequeña pre-configuración que se debe borrar para configurar completamente desde 0. 
+
+**Opción UI**:
+
+**Opción CLI**:
+
+1. Entrar a consola de Winbox y escribir el siguiente comando:
+
+````py
+system reset-configuration no=yes
+````
+
+2. Presionar `y`
+
+
