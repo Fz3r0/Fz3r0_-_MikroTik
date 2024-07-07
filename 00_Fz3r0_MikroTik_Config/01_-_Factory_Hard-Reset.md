@@ -9,7 +9,7 @@
 1. Apagar dispositivo
 2. Mantener presionado botón de reset
 3. Encender Dispositivo
-4. Dejar de prestionar botón reset (cuando deje de flashear el led)
+4. Dejar de prestionar botón reset (cuando deje de flashear el led ó en la pantalla muestre Ethernet Config)
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/76e934a2-6111-4931-a800-3472bb8f5849)
 
