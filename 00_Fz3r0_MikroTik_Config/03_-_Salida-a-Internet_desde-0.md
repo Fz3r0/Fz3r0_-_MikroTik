@@ -145,3 +145,5 @@ Debido a que no se ha configurado DHCP se debe agregar una IP manual a la PC de 
 
 1. Hacer ping a cualquier página o IP en Internet desde la PC en LAN:
 
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/bb349108-4cd8-44c5-b638-8801d6645701)
+
