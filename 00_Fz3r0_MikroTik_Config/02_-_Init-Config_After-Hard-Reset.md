@@ -41,6 +41,9 @@ Los MikroTik ya vienen con una pequeña pre-configuración que se debe borrar pa
 1. Ir a: **`System > Reset Configuration`**
 2. Seleccionar la opción `No Default Configuration` y `No Backup`
 3. Hacer click en `Reset Configuration`
+4. Dar click a `yes`
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/28de070e-a6ea-4178-aed8-cc6dd90055c9)
 
 **Opción CLI**:
 
