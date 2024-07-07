@@ -24,16 +24,28 @@ _Solo se puede entrar con MAC ya que hemos borrado la IP previamente_
     - User: `admin`
     - Pass: _vacío_
 
-
-
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/3b623e8f-5cd1-48d8-b62c-5da8a60d22ba)
 
 ---
 
-### 2. Configuración Puerto WAN :: ETH1
+### 3. Ingresar nuevo password de admin
+
+Al ingresar solicitará agregar un nuevo password, en este caso utilicé:
+
+- User: `admin`
+- Pass: `mikro123`
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/cfd032e1-06ca-47ad-9319-27126cf9fc0a)
+
+### 3. Configuración Interface WAN :: ETH1
 
 1. Ir a la sección **`Interfaces`**
 2. Seleccionar para editar **`Ether 1`**
-3. Llenar con la información necesaria (depende de la IP del Gateway / Módem de Internet), en este Lab sería la siguiente:
+3. Editar Ethernet 1, en mi caso:
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/d5b33fc6-e496-46fb-9b5a-e898bb481ad6)
+
+
 
 
 
