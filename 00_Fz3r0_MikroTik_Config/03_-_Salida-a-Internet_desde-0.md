@@ -43,6 +43,8 @@ Al ingresar solicitará agregar un nuevo password, en este caso utilicé:
 - User: `admin`
 - Pass: `mikro123`
 
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/cfd032e1-06ca-47ad-9319-27126cf9fc0a)
+
 ---
 
 ### 5. Configuración Interface WAN :: ETH1
