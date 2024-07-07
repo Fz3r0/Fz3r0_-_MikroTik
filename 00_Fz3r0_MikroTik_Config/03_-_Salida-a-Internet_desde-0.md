@@ -43,8 +43,6 @@ Al ingresar solicitará agregar un nuevo password, en este caso utilicé:
 - User: `admin`
 - Pass: `mikro123`
 
-![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/0e5570f1-f604-4d51-a35f-7435054ed783)
-
 ---
 
 ### 5. Configuración Interface WAN :: ETH1
@@ -53,7 +51,7 @@ Al ingresar solicitará agregar un nuevo password, en este caso utilicé:
 2. Seleccionar para editar **`Ether 1`**
 3. Editar Ethernet 1 (WAN), en mi caso:
 
-![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/6966dc6f-a11d-4d07-9c1a-f50434eafcb0)
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/0e5570f1-f604-4d51-a35f-7435054ed783)
 
 ---
 
