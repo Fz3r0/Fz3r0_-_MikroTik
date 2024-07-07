@@ -141,5 +141,7 @@ Es importante utilizar la IP del ISP/Router/Módem que se está utilizando, en m
 
 Debido a que no se ha configurado DHCP se debe agregar una IP manual a la PC de prueba:
 
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/d20be482-9166-4225-b223-e247c097d483)
+
 1. Hacer ping a cualquier página o IP en Internet desde la PC en LAN:
 
