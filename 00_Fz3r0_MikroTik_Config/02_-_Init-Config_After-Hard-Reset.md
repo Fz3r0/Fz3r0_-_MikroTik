@@ -7,11 +7,16 @@
 
 ## Configuración
 
-### 1. Entrar con MAC o IP default
+### 1. Conectar a ETH2
 
-1. Conectar MikroTik
-2. Abrir Winbox
-3. Entrar con MAC o  IP default <br><br>
+1. Conectar Entre PC <--> MikroTik por el puerto **`ETH2`**
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/c1342cff-db87-4ac6-8262-71c32cc1153a)
+
+### 2. Entrar con MAC o IP default
+
+1. Abrir Winbox
+2. Entrar con MAC o  IP default <br><br>
     - User: `admin`
     - Pass: _vacío_
 
