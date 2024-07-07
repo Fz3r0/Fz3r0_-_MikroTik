@@ -91,6 +91,36 @@ Subnet utilizada para LAN:
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/08f1ba91-afc1-4f9f-ab0b-3e49df456f28)
 
+---
+
+### 8. Crear NAT
+
+El NAT se crea para poder enviar el tráfico desde LAN hacia la WAN (Internet)
+
+1. Ir a la sección **`IP > Firewall > NAT`**
+2. En la pestaña `General` y opción `Chain` seleccionar: **`srcnat`**
+3. En la opción `Out. Interface` seleccionar la `WAN`
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/68167832-2f25-43f9-ac03-5b773d442938)
+
+4. En la pestaña `Action` y opción `Action` seleccionar: **`masquerade`**
+5. Añadir comentarios
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/eb24e9c5-711a-43a2-b503-9affb0b8cbd6)
+
+---
+
+### 9. Configurar DNS
+
+1. Ir a la sección **`IP > DNS`**
+2. Agregar los servidores DNS a placer, en mi caso: <br><br>
+    - `1.1.1.1` _(Cloud Flare Primary)_
+    - `1.0.0.1` _(Cloud Flare Secondary)_
+    - `8.8.8.8` _(Google Primary)_
+    - `8.8.4.4` _(Google Secondary)_ <br><br>
+3. Dar check a la opción `Allow Remote Request`
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/27cbb5a1-b285-495d-ba87-056dba93b209)
 
 
 
