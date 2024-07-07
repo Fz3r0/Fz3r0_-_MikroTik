@@ -13,6 +13,8 @@
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/c1342cff-db87-4ac6-8262-71c32cc1153a)
 
+---
+
 ### 2. Entrar con MAC o IP default
 
 1. Abrir Winbox
@@ -28,4 +30,5 @@
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/1698aaa0-a32b-4e92-bc07-5fd2dfaba63c)
 
+---
 
