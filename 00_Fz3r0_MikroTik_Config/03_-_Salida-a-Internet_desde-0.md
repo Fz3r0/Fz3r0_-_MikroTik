@@ -76,7 +76,7 @@ Primero asignaré la IP de la WAN:
 3. Asignar la IP de la red aunque también se puede poner automáticamente una vez asignando la IP de la interfaz _(En mi caso `192.168.1.0`)_
 4. Agregar comentarios.
 
-![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/5336deec-5a37-47b2-a120-8b79bed36afe)
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/c10913f7-9ec8-4666-bbc7-8c120d751461)
 
 Ahora asignaré la IP de la LAN:
 
@@ -85,7 +85,9 @@ Ahora asignaré la IP de la LAN:
 3. Asignar la IP de la red aunque también se puede poner automáticamente una vez asignando la IP de la interfaz _(En mi caso `10.10.0.0`)_
 4. Agregar comentarios.
 
-Subnet utilizada:
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/bd399f9b-343c-48c0-82d6-47c691c66acb)
+
+Subnet utilizada para LAN:
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/08f1ba91-afc1-4f9f-ab0b-3e49df456f28)
 
