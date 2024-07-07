@@ -7,7 +7,7 @@
 
 ## Configuración
 
-### 1. Conectar a ETH2
+### 1. Conectar LAN a ETH2
 
 1. Conectar Entre PC <--> MikroTik por el puerto **`ETH2`**
 
@@ -15,7 +15,15 @@
 
 ---
 
-### 2. Entrar con MAC
+1. Conectar Entre Router / Módem <--> MikroTik por el puerto **`ETH1`**
+
+### 2. Conectar WAN a ETH1
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/25b5949b-ba17-481f-b465-0ff3e6b2dc3b)
+
+---
+
+### 3. Entrar con MAC
 
 _Solo se puede entrar con MAC ya que hemos borrado la IP previamente_
 
@@ -28,7 +36,7 @@ _Solo se puede entrar con MAC ya que hemos borrado la IP previamente_
 
 ---
 
-### 3. Ingresar nuevo password de admin
+### 4. Ingresar nuevo password de admin
 
 Al ingresar solicitará agregar un nuevo password, en este caso utilicé:
 
@@ -39,7 +47,7 @@ Al ingresar solicitará agregar un nuevo password, en este caso utilicé:
 
 ---
 
-### 4. Configuración Interface WAN :: ETH1
+### 5. Configuración Interface WAN :: ETH1
 
 1. Ir a la sección **`Interfaces`**
 2. Seleccionar para editar **`Ether 1`**
@@ -49,7 +57,7 @@ Al ingresar solicitará agregar un nuevo password, en este caso utilicé:
 
 ---
 
-### 5. Configuración Interface LAN :: ETH2
+### 6. Configuración Interface LAN :: ETH2
 
 1. Ir a la sección **`Interfaces`**
 2. Seleccionar para editar **`Ether 2`**
@@ -57,7 +65,29 @@ Al ingresar solicitará agregar un nuevo password, en este caso utilicé:
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/39fddfb3-a0d2-49f9-aa6e-df1681efbca5)
 
+---
 
+### 7. Asignar IPs a LAN y WAN
+
+Primero asignaré la IP de la WAN:
+
+1. Ir a la sección **`IP > Addresses`**
+2. Dar click en `+` y asignar la IP de la `WAN` _(Se utiliza una IP dependiendo del Router / Módem Internet, es mi caso el Telmex es `192.168.1.254/24` así que utilizaré la: `192.168.1.1/24`)_
+3. Asignar la IP de la red aunque también se puede poner automáticamente una vez asignando la IP de la interfaz _(En mi caso `192.168.1.0`)_
+4. Agregar comentarios.
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/5336deec-5a37-47b2-a120-8b79bed36afe)
+
+Ahora asignaré la IP de la LAN:
+
+1. Ir a la sección **`IP > Addresses`**
+2. Dar click en `+` y asignar la IP de la `LAN` _(En mi caso utilizaré la subnet 10.10.0.0/16)_
+3. Asignar la IP de la red aunque también se puede poner automáticamente una vez asignando la IP de la interfaz _(En mi caso `10.10.0.0`)_
+4. Agregar comentarios.
+
+Subnet utilizada:
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/08f1ba91-afc1-4f9f-ab0b-3e49df456f28)
 
 
 
