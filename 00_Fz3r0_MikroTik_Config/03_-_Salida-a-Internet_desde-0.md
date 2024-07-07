@@ -122,6 +122,24 @@ El NAT se crea para poder enviar el tráfico desde LAN hacia la WAN (Internet)
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/27cbb5a1-b285-495d-ba87-056dba93b209)
 
+---
 
+### 10. Configurar Default Static Route
 
+Es importante utilizar la IP del ISP/Router/Módem que se está utilizando, en mi caso es la IP de Telmex: `192.168.1.254`
+
+1. Ir a la sección **`IP > Routes`**
+2. Agregar la IP del ISP/Router/Módem en la opción de `Gateway`
+3. Agregar comentarios
+4. Aplicar
+
+![image](https://github.com/Fz3r0/Fz3r0_-_MikroTik/assets/94720207/33b037b6-7dda-427b-a43d-96135016706a)
+
+---
+
+### 11. Verificar que haya salida a Internet
+
+Debido a que no se ha configurado DHCP se debe agregar una IP manual a la PC de prueba:
+
+1. Hacer ping a cualquier página o IP en Internet desde la PC en LAN:
 
