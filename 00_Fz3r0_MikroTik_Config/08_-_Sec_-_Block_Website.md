@@ -16,7 +16,7 @@
 
 ---
 
-### 2. Crear Filter Rules
+### 2. Crear Filter Rules: No URL
 
 1. En la pestaña `General` agregar la subnet de la LAN/VLAN donde se bloqueará la IP / URL
 
@@ -32,11 +32,28 @@
 
 ---
 
-### 3. Validar Configuración
+### 3. Crear Filter Rules: Np IP
+
+1. En la pestaña `Address List` un objeto de la IP de lichess.org
+
+![image](https://github.com/user-attachments/assets/00a03dca-ccdf-4dce-a492-43bc9d37cb55)
+
+2. En la pestaña `Advanced` agregar Regla creada en el paso anterior
+
+![image](https://github.com/user-attachments/assets/517d12be-33dc-4ae5-b5cb-e938406b373f)
+
+3. En la pestaña `Action` selecciónar `drop` (Aquí también se puedes usar otras acciones para otro tipo de propósitos)
+
+![image](https://github.com/user-attachments/assets/0763f500-7290-442b-bf53-ff7615156ee7)
+
+---
+
+### 4. Validar Configuración
 
 - Cuando se intenta navegar en la página ya no abrirá, incluyendo dominios y subdominios
 
-![image](https://github.com/user-attachments/assets/26ddd808-1f90-4941-8f0c-3d49e0518b45)
+![image](https://github.com/user-attachments/assets/74699f92-2b68-4426-9ac4-0aac86a9af3c)
+
 
 
 
