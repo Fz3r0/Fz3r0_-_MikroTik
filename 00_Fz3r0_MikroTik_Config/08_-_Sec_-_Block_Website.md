@@ -2,7 +2,8 @@
 
 ## Recursos
 
-- [Cow to Block/Filter website MikroTik](https://www.youtube.com/watch?v=dNswOyvLT4w)
+- [How to Block/Filter website MikroTik](https://www.youtube.com/watch?v=dNswOyvLT4w)
+- [Block facebook.com / collect all public IPs and block URL & IPs](https://www.youtube.com/watch?v=sWcomIz7gM4)
 
 ## Configuración
 
