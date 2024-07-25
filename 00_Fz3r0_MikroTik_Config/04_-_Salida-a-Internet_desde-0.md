@@ -1,4 +1,4 @@
-# 03 - Salida a Internet desde 0
+# Salida a Internet desde 0
 
 ## Recursos
 
