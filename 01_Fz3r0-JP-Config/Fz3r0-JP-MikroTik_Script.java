@@ -24,7 +24,7 @@
 #    ((_.-`-+' Fz3r0 '+-´-._)) MIKROTIK GENERIC HIGH DENSITY NETWORK CONFIGURATION          #
 #############################################################################################
 # 
-#   - THANK YOU FOR USING THIS MIKROTIK CONFIGURATION SCRIPT FOR HIGH DENSITY NETWORKS!
+#   - THANK YOU FOR USING THIS MIKROTIK CONFIGURATION SCRIPT FOR MALL and RETAIL NETWORKS!
 #    
 #   - PLEASE READ THE INSTRUCTIONS CAREFULLY BEFORE PROCEEDING. 
 #
@@ -111,7 +111,7 @@
 #
 /system identity
 #
-set name="Fz3r0_JP-LAB"
+set name="CHLEOCAM"
 #
 #############################################################################################
 #  + SYSTEM NOTE
@@ -124,23 +124,15 @@ set note="\r\
     \n\r\
     \n\r\
     \n\r\
-    \n\r\
-    \n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\
-    \n        ######## ########  #######  ########    #####        \r\ 
-    \n        ##            ##  ##     ## ##     ##  ##   ##       \r\
-    \n        ##           ##          ## ##     ## ##     ##      \r\
-    \n        ######      ##     #######  ########  ##     ##      \r\
-    \n        ##         ##            ## ##   ##   ##     ##      \r\
-    \n        ##        ##      ##     ## ##    ##   ##   ##       \r\
-    \n        ##       ########  #######  ##     ##   #####        \r\
-    \n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\
-    \n\r\
-    \n\r\
-    \n>> VENUE: Fz3r0_JP-LAB \r\
-    \n\r\
-    \n>> PROPERTY OF Fz3r0 & InGen - AUTHORIZED PERSONNEL ONLY\r\
-    \n\r\
     \n>> UNAUTHORIZED ACCESS TO THIS DEVICE IS STRICTLY PROHIBITED. \r\
+    \n\r\
+    \n>> VIOLATIONS WILL BE MONITORED, AND ACTION MAY BE TAKEN UNDER \r\
+    \n   APPLICABLE CYBERSECURITY LAWS.\r\
+    \n\r\
+    \n>> FAILURE TO COMPLY WITH THESE TERMS WILL RESULT IN IMMEDIATE \r\
+    \n   SYSTEM LOCKDOWN AND POSSIBLE LEGAL ACTION. \r\
+    \n\r\
+    \n>> ACCESS WITH CAUTION.  \r\
     \n\r\
     \n"
 #    
@@ -193,13 +185,13 @@ add bridge=LAN interface=EXTRA2_ether5
 #
 /interface vlan
 #
-add interface=LAN_BRIDGE_@_ether3 name=vlan66-MGMT            vlan-id=66
-add interface=LAN_BRIDGE_@_ether3 name=vlan5-OPEN-GUEST       vlan-id=5
-add interface=LAN_BRIDGE_@_ether3 name=vlan6-802-1X-ALPHA     vlan-id=6
-add interface=LAN_BRIDGE_@_ether3 name=vlan7-802-1X-BRAVO     vlan-id=7
-add interface=LAN_BRIDGE_@_ether3 name=vlan8-PSK-CHARLY       vlan-id=8
-add interface=LAN_BRIDGE_@_ether3 name=vlan9-PASSPOINT-DELTA  vlan-id=9
-add interface=LAN_BRIDGE_@_ether3 name=vlan1-HONEYPOT         vlan-id=1
+add interface=LAN_BRIDGE_@_ether3 name=vlan1-MGMT       vlan-id=1
+add interface=LAN_BRIDGE_@_ether3 name=vlan5-STATION    vlan-id=5
+add interface=LAN_BRIDGE_@_ether3 name=vlan6-MEGACABLE  vlan-id=6
+add interface=LAN_BRIDGE_@_ether3 name=vlan7-TOTALZONE  vlan-id=7
+add interface=LAN_BRIDGE_@_ether3 name=vlan8-PREMIUM    vlan-id=8
+add interface=LAN_BRIDGE_@_ether3 name=vlan9-PASSPOINT  vlan-id=9
+add interface=LAN_BRIDGE_@_ether3 name=vlan66-HONEYPOT  vlan-id=66
 #
 #############################################################################################
 #  + IP ADDRESSES , DHCP SERVER , IP POOLS 
@@ -240,19 +232,19 @@ add interface=LAN_BRIDGE_@_ether3 name=vlan1-HONEYPOT         vlan-id=1
 # << LAN >>
 #
 # % MANAGEMENT PHYSICAL INTERFACES:
-add address=10.66.0.1/24  interface=LAN_ether3            network=10.66.0.0
-add address=10.66.0.2/24  interface=EXTRA1_ether4         network=10.66.0.0
-add address=10.66.0.3/24  interface=EXTRA2_ether5         network=10.66.0.0
+add address=10.10.0.1/24  interface=LAN_ether3       network=10.10.0.0
+add address=10.10.0.2/24  interface=EXTRA1_ether4    network=10.10.0.0
+add address=10.10.0.3/24  interface=EXTRA2_ether5    network=10.10.0.0
 #
 # << VLANs >>
 #
 # % VIRTUAL LAN INTERFACES @ LAN_ether3:
-add address=10.5.0.1/16   interface=vlan5-OPEN-GUEST       network=10.5.0.0
-add address=10.6.0.1/16   interface=vlan6-802-1X-ALPHA     network=10.6.0.0
-add address=10.7.0.1/16   interface=vlan7-802-1X-BRAVO     network=10.7.0.0
-add address=10.8.0.1/16   interface=vlan8-PSK-CHARLY       network=10.8.0.0
-add address=10.9.0.1/16   interface=vlan9-PASSPOINT-DELTA  network=10.9.0.0
-add address=10.1.0.1/16   interface=vlan1-HONEYPOT         network=10.1.0.0
+add address=10.50.0.1/16  interface=vlan5-STATION    network=10.50.0.0
+add address=10.60.0.1/16  interface=vlan6-MEGACABLE  network=10.60.0.0
+add address=10.70.0.1/16  interface=vlan7-TOTALZONE  network=10.70.0.0
+add address=10.80.0.1/16  interface=vlan8-PREMIUM    network=10.80.0.0
+add address=10.90.0.1/16  interface=vlan9-PASSPOINT  network=10.90.0.0
+add address=10.66.0.1/16  interface=vlan66-HONEYPOT  network=10.66.0.0
 #
 # << WANs >>
 #
@@ -278,15 +270,15 @@ add disabled=no interface=WAN2_ether2
 #
 # % "184 of 254 IPS available for MANAGEMENT DHCP":
 # % "First 70 IP Addresses are reserved for static Switches, Servers, Gateway, etc"
-add name=vlan66-MGMT-pool           ranges=10.66.0.70-10.66.0.254
+add name=vlan1-MGMT-pool      ranges=10.10.0.70-10.10.0.254
 #
 # % "1,742 of 65,534 IPS available for each VLAN":
-add name=vlan5-OPEN-GUEST-pool      ranges=10.5.0.10-10.5.6.255
-add name=vlan6-802-1X-ALPHA-pool    ranges=10.6.0.10-10.6.6.255
-add name=vlan7-802-1X-BRAVO-pool    ranges=10.7.0.10-10.7.6.255
-add name=vlan8-PSK-CHARLY-pool      ranges=10.8.0.10-10.8.6.255
-add name=vlan9-PASSPOINT-DELTA-pool ranges=10.9.0.10-10.9.6.255
-add name=vlan1-HONEYPOT-pool        ranges=10.1.0.10-10.1.6.255
+add name=vlan5-STATION-pool   ranges=10.50.0.10-10.50.6.255
+add name=vlan6-MEGACABLE-pool ranges=10.60.0.10-10.60.6.255
+add name=vlan7-TOTALZONE-pool ranges=10.70.0.10-10.70.6.255
+add name=vlan8-PREMIUM-pool   ranges=10.80.0.10-10.80.6.255
+add name=vlan9-PASSPOINT-pool ranges=10.90.0.10-10.90.6.255
+add name=vlan66-HONEYPOT-pool ranges=10.66.0.10-10.66.6.255
 #
 #############################
 # + DHCP SERVER:
@@ -298,16 +290,16 @@ add name=vlan1-HONEYPOT-pool        ranges=10.1.0.10-10.1.6.255
 #
 # << MANAGEMENT >>
 #
-add address-pool=vlan66-MGMT-pool           disabled=no  interface=LAN_BRIDGE_@_ether3    lease-time=24h name=vlan66-MGMT-dhcp
+add address-pool=vlan1-MGMT-pool      disabled=no  interface=LAN_BRIDGE_@_ether3 lease-time=24h name=vlan1-MGMT-dhcp
 #
 # << VLANS >>
 #
-add address-pool=vlan5-OPEN-GUEST-pool      disabled=no  interface=vlan5-OPEN-GUEST       lease-time=3h  name=vlan5-OPEN-GUEST-dhcp
-add address-pool=vlan6-802-1X-ALPHA-pool    disabled=no  interface=vlan6-802-1X-ALPHA     lease-time=3h  name=vlan6-802-1X-ALPHA-dhcp
-add address-pool=vlan7-802-1X-BRAVO-pool    disabled=no  interface=vlan7-802-1X-BRAVO     lease-time=3h  name=vlan7-802-1X-BRAVO-dhcp
-add address-pool=vlan8-PSK-CHARLY-pool      disabled=no  interface=vlan8-PSK-CHARLY       lease-time=3h  name=vlan8-PSK-CHARLY-dhcp
-add address-pool=vlan9-PASSPOINT-DELTA-pool disabled=no  interface=vlan9-PASSPOINT-DELTA  lease-time=3h  name=vlan9-PASSPOINT-dhcp
-add address-pool=vlan66-HONEYPOT-pool       disabled=no  interface=vlan1-HONEYPOT         lease-time=3h  name=vlan1-HONEYPOT-dhcp
+add address-pool=vlan5-STATION-pool   disabled=no  interface=vlan5-STATION       lease-time=3h  name=vlan5-STATION-dhcp
+add address-pool=vlan6-MEGACABLE-pool disabled=no  interface=vlan6-MEGACABLE     lease-time=3h  name=vlan6-MEGACABLE-dhcp
+add address-pool=vlan7-TOTALZONE-pool disabled=no  interface=vlan7-TOTALZONE     lease-time=3h  name=vlan7-TOTALZONE-dhcp
+add address-pool=vlan8-PREMIUM-pool   disabled=no  interface=vlan8-PREMIUM       lease-time=3h  name=vlan8-PREMIUM-dhcp
+add address-pool=vlan9-PASSPOINT-pool disabled=no  interface=vlan9-PASSPOINT     lease-time=3h  name=vlan9-PASSPOINT-dhcp
+add address-pool=vlan66-HONEYPOT-pool disabled=no  interface=vlan66-HONEYPOT     lease-time=3h  name=vlan66-HONEYPOT-dhcp
 #
 #############################
 # + DHCP NETWORKS FOR DHCP OFFER
@@ -317,16 +309,16 @@ add address-pool=vlan66-HONEYPOT-pool       disabled=no  interface=vlan1-HONEYPO
 #
 # << MANAGEMENT >>
 #
-add address=10.66.0.0/24 comment=vlan66-MGMT            dns-server=8.8.8.8,1.1.1.1 gateway=10.66.0.1
+add address=10.10.0.0/24 comment=vlan1-MGMT        dns-server=8.8.8.8,1.1.1.1 gateway=10.10.0.1
 #
 # << VLANS >>
 #
-add address=10.5.0.0/16  comment=vlan5-OPEN-GUEST       dns-server=8.8.8.8,1.1.1.1 gateway=10.5.0.1
-add address=10.6.0.0/16  comment=vlan6-802-1X-ALPHA     dns-server=8.8.8.8,1.1.1.1 gateway=10.6.0.1
-add address=10.7.0.0/16  comment=vlan7-802-1X-BRAVO     dns-server=8.8.8.8,1.1.1.1 gateway=10.7.0.1
-add address=10.8.0.0/16  comment=vlan8-PSK-CHARLY       dns-server=8.8.8.8,1.1.1.1 gateway=10.8.0.1
-add address=10.9.0.0/16  comment=vlan9-PASSPOINT-DELTA  dns-server=8.8.8.8,1.1.1.1 gateway=10.9.0.1
-add address=10.1.0.0/16  comment=vlan66-HONEYPOT        dns-server=8.8.8.8,1.1.1.1 gateway=10.1.0.1
+add address=10.50.0.0/16 comment=vlan5-STATION     dns-server=8.8.8.8,1.1.1.1 gateway=10.50.0.1
+add address=10.60.0.0/16 comment=vlan6-MEGACABLE   dns-server=8.8.8.8,1.1.1.1 gateway=10.60.0.1
+add address=10.70.0.0/16 comment=vlan7-TOTALZONE   dns-server=8.8.8.8,1.1.1.1 gateway=10.70.0.1
+add address=10.80.0.0/16 comment=vlan8-PREMIUM     dns-server=8.8.8.8,1.1.1.1 gateway=10.80.0.1
+add address=10.90.0.0/16 comment=vlan9-PASSPOINT   dns-server=8.8.8.8,1.1.1.1 gateway=10.90.0.1
+add address=10.66.0.0/16 comment=vlan66-HONEYPOT   dns-server=8.8.8.8,1.1.1.1 gateway=10.66.0.1
 #
 #############################################################################################
 #  + DNS
@@ -359,69 +351,15 @@ set discover-interface-list=!dynamic
 #
 # :IMPORNTANT-3: IF VPN IS NOT ACTIVATED AFTER CONFIG IN UI, INTERNET SERVICE WILL STILL AVAILABLE YAI! 
 #
-#############################
-# BRIDGE INTERFACE FOR VPN LOOPBACK:
-#############################
-#
-/interface bridge
-add comment=">>>   LOOPBACK FOR VPN" name=VPN-Loopback
-#
-#############################
-# IP ADDRESS FOR VPN INTERFACE:
-#############################
-#
-/ip address
-add address=172.16.0.20 interface=VPN-Loopback
-#
-#############################
-# IPSEC VPN CONFIGURATION
-#############################
-#
-/ip ipsec profile
-add dh-group=modp4096,modp2048 enc-algorithm=aes-256,3des hash-algorithm=sha256 name=AWS-PROF
-#
-/ip ipsec peer
-add address=123.123.123.1/32 exchange-mode=ike2 name=AWS-VPC profile=AWS-PROF
-#
-/ip ipsec proposal
-add auth-algorithms=sha256 enc-algorithms=aes-256-cbc,aes-192-cbc lifetime=8h name=AWS-PROP pfs-group=none
-#
-/ip ipsec identity
-add generate-policy=port-strict my-id=address:172.16.0.20 peer=AWS-VPC secret=F0jpJPjpJPFz3r001234
-#
-/ip ipsec policy
-add disabled=yes dst-address=10.10.0.0/22 level=unique peer=AWS-VPC proposal=AWS-PROP src-address=172.16.0.20/32 tunnel=yes
-#
-#############################
-# SNMP (FOR MONITORING)
-#############################
-#
-/snmp
-set contact=Fz3r0 enabled=yes location="Fz3r0_JP-LAB"
-/snmp community
-add addresses=0.0.0.0/0 name=Fz3r0_SNMP_Community
-add addresses=::/0 authentication-password=SNMP.Pa$$123 authentication-protocol=SHA1 encryption-password=SNMP.Crypt0.123 name=RO security=authorized
-add addresses=::/0 name=H1gHd3nsity
-#
-#############################################################################################
-#  + RADIUS LOGIN
-#############################################################################################
-#
-/radius add service=login address=111.222.111.222 secret=r3mot3.RADIU$ authentication-port=1812 accounting-port=1813 protocol=udp
-#
-/user aaa set use-radius=yes default-group=full
-#
+
 #############################################################################################
 #  + NAT & ROUTING (ACTIVATE INTERNET SERVICE FOR THE LAN & VPN CONNECTION)
 #############################################################################################
 #
-# :IMPORTANT: USE THE SAME IP ADDRESS USED BY IPSEC VPN CLIENT FOR SOURCE ADDRESS (EG. 172.16.0.20)
+# :IMPORTANT: USE THE SAME IP ADDRESS USED BY IPSEC VPN CLIENT FOR SOURCE ADDRESS (EG. 172.16.38.19)
 #
 /ip firewall nat
 #
-# % NAT FOR VPN IPSEC !10.10.0.0/22 IS THE REMOTE AWS VPN SERVER NETWORK - DO NOT CONFUSE WITH THIS MIKROTIK!
-#
-add action=accept chain=srcnat dst-address=10.10.0.0/22 src-address=172.16.0.20
 #
 # % NAT FOR LAN/VLANS INTERNET WAN1_ether1 & WAN2_ether2
 #
@@ -433,7 +371,7 @@ add action=masquerade chain=srcnat out-interface=WAN2_ether2
 #  + ADMIN , USERS , PASSWORDS
 #############################################################################################
 #
-#/user add       name=Fz3r0 group=full password=mikro123
+#/user add       name=Fz3r0 group=full password=mikro123 
 #
 #/user set [find name=admin]           password=mikro123
 #
@@ -441,7 +379,3 @@ add action=masquerade chain=srcnat out-interface=WAN2_ether2
 #  + FINISH!!!
 #############################################################################################
 # - - - - - - - - - - - - - - - END COPY - - - - - - - - - - - - - - - #
-
-
-
-  
