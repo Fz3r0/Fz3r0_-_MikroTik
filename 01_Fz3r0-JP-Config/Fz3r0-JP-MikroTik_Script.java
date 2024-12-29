@@ -345,5 +345,34 @@ set allow-none-crypto=yes forwarding-enabled=remote
 /ip neighbor discovery-settings
 set discover-interface-list=!dynamic
 #
+#############################################################################################
+#  + NAT & ROUTING (ACTIVATE INTERNET SERVICE FOR THE LAN & VPN CONNECTION)
+#############################################################################################
+#
+# :IMPORTANT: USE THE SAME IP ADDRESS USED BY IPSEC VPN CLIENT FOR SOURCE ADDRESS (EG. 172.16.38.19)
+#
+/ip firewall nat
+#
+# % NAT FOR VPN IPSEC !10.10.0.0/22 IS THE REMOTE VPN SERVER NETWORK - DO NOT CONFUSE WITH THIS MIKROTIK!
+#
+add action=accept chain=srcnat dst-address=10.10.0.0/22 src-address=172.16.38.19
+#
+# % NAT FOR LAN/VLANS INTERNET WAN1_ether1 & WAN2_ether2
+#
+add action=masquerade chain=srcnat out-interface=WAN1_ether1
+add action=masquerade chain=srcnat out-interface=WAN2_ether2
+#
+#############################################################################################
+#  + ADMIN , USERS , PASSWORDS
+#############################################################################################
+#
+#/user add       name=Fz3r0 group=full password=mikro123 
+#
+#/user set [find name=admin]           password=mikro123
+#
+#############################################################################################
+#  + FINISH!!!
+#############################################################################################
+# - - - - - - - - - - - - - - - END COPY - - - - - - - - - - - - - - - #
 
     
