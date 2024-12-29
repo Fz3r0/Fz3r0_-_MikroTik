@@ -111,7 +111,7 @@
 #
 /system identity
 #
-set name="CHLEOCAM"
+set name="MKT_F0-JP_SITE-A"
 #
 #############################################################################################
 #  + SYSTEM NOTE
@@ -124,15 +124,19 @@ set note="\r\
     \n\r\
     \n\r\
     \n\r\
+    \n\r\
+    \n\r\
+    \n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\
+    \n    F Z 3 R O  -  J U R A S S I C  P A R K  -  S I T E  A    \r\
+    \n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\
+    \n\r\
+    \n\r\
+    \n>> VENUE: MKT_F0-JP_SITE-A \r\
+    \n\r\
+    \n>> PROPERTY OF Fz3r0 - AUTHORIZED PERSONNEL ONLY\r\
+    \n\r\
     \n>> UNAUTHORIZED ACCESS TO THIS DEVICE IS STRICTLY PROHIBITED. \r\
     \n\r\
-    \n>> VIOLATIONS WILL BE MONITORED, AND ACTION MAY BE TAKEN UNDER \r\
-    \n   APPLICABLE CYBERSECURITY LAWS.\r\
-    \n\r\
-    \n>> FAILURE TO COMPLY WITH THESE TERMS WILL RESULT IN IMMEDIATE \r\
-    \n   SYSTEM LOCKDOWN AND POSSIBLE LEGAL ACTION. \r\
-    \n\r\
-    \n>> ACCESS WITH CAUTION.  \r\
     \n\r\
     \n"
 #    
@@ -185,19 +189,19 @@ add bridge=LAN interface=EXTRA2_ether5
 #
 /interface vlan
 #
-add interface=LAN_BRIDGE_@_ether3 name=vlan1-MGMT       vlan-id=1
-add interface=LAN_BRIDGE_@_ether3 name=vlan5-STATION    vlan-id=5
-add interface=LAN_BRIDGE_@_ether3 name=vlan6-MEGACABLE  vlan-id=6
-add interface=LAN_BRIDGE_@_ether3 name=vlan7-TOTALZONE  vlan-id=7
-add interface=LAN_BRIDGE_@_ether3 name=vlan8-PREMIUM    vlan-id=8
-add interface=LAN_BRIDGE_@_ether3 name=vlan9-PASSPOINT  vlan-id=9
-add interface=LAN_BRIDGE_@_ether3 name=vlan66-HONEYPOT  vlan-id=66
+add interface=LAN_BRIDGE_@_ether3 name=vlan10-MANAGEMENT                 vlan-id=10
+add interface=LAN_BRIDGE_@_ether3 name=vlan50-ALFA_OPEN                  vlan-id=50
+add interface=LAN_BRIDGE_@_ether3 name=vlan60-BRAVO_WPA2-PSK             vlan-id=60
+add interface=LAN_BRIDGE_@_ether3 name=vlan70-CHARLIE_802.1X-PEAP        vlan-id=70
+add interface=LAN_BRIDGE_@_ether3 name=vlan80-DELTA_HOTSPOT-WISPr        vlan-id=80
+add interface=LAN_BRIDGE_@_ether3 name=vlan90-ECHO_HOTSPOT2.0-PASSPOINT  vlan-id=90
+add interface=LAN_BRIDGE_@_ether3 name=vlan66-HONEYPOT                   vlan-id=66
 #
 #############################################################################################
 #  + IP ADDRESSES , DHCP SERVER , IP POOLS 
 #############################################################################################
 #
-# % IP PLAN EXAMPLE (MGMT)    << 254 ADDRESSES >>
+# % IP PLAN EXAMPLE (MANAGEMENT)    << 254 ADDRESSES >>
 #
 #  Address:   10.10.0.1             00001010.00001010.00000000 .00000001
 #  Netmask:   255.255.255.0 = 24    11111111.11111111.11111111 .00000000
@@ -232,19 +236,19 @@ add interface=LAN_BRIDGE_@_ether3 name=vlan66-HONEYPOT  vlan-id=66
 # << LAN >>
 #
 # % MANAGEMENT PHYSICAL INTERFACES:
-add address=10.10.0.1/24  interface=LAN_ether3       network=10.10.0.0
-add address=10.10.0.2/24  interface=EXTRA1_ether4    network=10.10.0.0
-add address=10.10.0.3/24  interface=EXTRA2_ether5    network=10.10.0.0
+add address=10.10.0.1/24  interface=LAN_ether3                        network=10.10.0.0
+add address=10.10.0.2/24  interface=EXTRA1_ether4                     network=10.10.0.0
+add address=10.10.0.3/24  interface=EXTRA2_ether5                     network=10.10.0.0
 #
 # << VLANs >>
 #
 # % VIRTUAL LAN INTERFACES @ LAN_ether3:
-add address=10.50.0.1/16  interface=vlan5-STATION    network=10.50.0.0
-add address=10.60.0.1/16  interface=vlan6-MEGACABLE  network=10.60.0.0
-add address=10.70.0.1/16  interface=vlan7-TOTALZONE  network=10.70.0.0
-add address=10.80.0.1/16  interface=vlan8-PREMIUM    network=10.80.0.0
-add address=10.90.0.1/16  interface=vlan9-PASSPOINT  network=10.90.0.0
-add address=10.66.0.1/16  interface=vlan66-HONEYPOT  network=10.66.0.0
+add address=10.50.0.1/16  interface=vlan50-ALFA_OPEN                  network=10.50.0.0
+add address=10.60.0.1/16  interface=vlan60-BRAVO_WPA2-PSK             network=10.60.0.0
+add address=10.70.0.1/16  interface=vlan70-CHARLIE_802.1X-PEAP        network=10.70.0.0
+add address=10.80.0.1/16  interface=vlan80-DELTA_HOTSPOT-WISPr        network=10.80.0.0
+add address=10.90.0.1/16  interface=vlan90-ECHO_HOTSPOT2.0-PASSPOINT  network=10.90.0.0
+add address=10.66.0.1/16  interface=vlan66-HONEYPOT                   network=10.66.0.0
 #
 # << WANs >>
 #
@@ -270,15 +274,15 @@ add disabled=no interface=WAN2_ether2
 #
 # % "184 of 254 IPS available for MANAGEMENT DHCP":
 # % "First 70 IP Addresses are reserved for static Switches, Servers, Gateway, etc"
-add name=vlan1-MGMT-pool      ranges=10.10.0.70-10.10.0.254
+add name=vlan10-MANAGEMENT-pool                 ranges=10.10.0.70-10.10.0.254
 #
 # % "1,742 of 65,534 IPS available for each VLAN":
-add name=vlan5-STATION-pool   ranges=10.50.0.10-10.50.6.255
-add name=vlan6-MEGACABLE-pool ranges=10.60.0.10-10.60.6.255
-add name=vlan7-TOTALZONE-pool ranges=10.70.0.10-10.70.6.255
-add name=vlan8-PREMIUM-pool   ranges=10.80.0.10-10.80.6.255
-add name=vlan9-PASSPOINT-pool ranges=10.90.0.10-10.90.6.255
-add name=vlan66-HONEYPOT-pool ranges=10.66.0.10-10.66.6.255
+add name=vlan50-ALFA_OPEN-pool                  ranges=10.50.0.10-10.50.6.255
+add name=vlan60-BRAVO_WPA2-PSK-pool             ranges=10.60.0.10-10.60.6.255
+add name=vlan70-CHARLIE_802.1X-PEAP-pool        ranges=10.70.0.10-10.70.6.255
+add name=vlan80-DELTA_HOTSPOT-WISPr-pool        ranges=10.80.0.10-10.80.6.255
+add name=vlan90-ECHO_HOTSPOT2.0-PASSPOINT-pool  ranges=10.90.0.10-10.90.6.255
+add name=vlan66-HONEYPOT-pool                   ranges=10.66.0.10-10.66.6.255
 #
 #############################
 # + DHCP SERVER:
@@ -290,16 +294,16 @@ add name=vlan66-HONEYPOT-pool ranges=10.66.0.10-10.66.6.255
 #
 # << MANAGEMENT >>
 #
-add address-pool=vlan1-MGMT-pool      disabled=no  interface=LAN_BRIDGE_@_ether3 lease-time=24h name=vlan1-MGMT-dhcp
+add address-pool=vlan10-MANAGEMENT-pool                 disabled=no  interface=LAN_BRIDGE_@_ether3              lease-time=24h  name=vlan10-MANAGEMENT-dhcp
 #
 # << VLANS >>
 #
-add address-pool=vlan5-STATION-pool   disabled=no  interface=vlan5-STATION       lease-time=3h  name=vlan5-STATION-dhcp
-add address-pool=vlan6-MEGACABLE-pool disabled=no  interface=vlan6-MEGACABLE     lease-time=3h  name=vlan6-MEGACABLE-dhcp
-add address-pool=vlan7-TOTALZONE-pool disabled=no  interface=vlan7-TOTALZONE     lease-time=3h  name=vlan7-TOTALZONE-dhcp
-add address-pool=vlan8-PREMIUM-pool   disabled=no  interface=vlan8-PREMIUM       lease-time=3h  name=vlan8-PREMIUM-dhcp
-add address-pool=vlan9-PASSPOINT-pool disabled=no  interface=vlan9-PASSPOINT     lease-time=3h  name=vlan9-PASSPOINT-dhcp
-add address-pool=vlan66-HONEYPOT-pool disabled=no  interface=vlan66-HONEYPOT     lease-time=3h  name=vlan66-HONEYPOT-dhcp
+add address-pool=vlan50-ALFA_OPEN-pool                  disabled=no  interface=vlan50-ALFA_OPEN                  lease-time=3h  name=vlan50-ALFA_OPEN-dhcp
+add address-pool=vlan60-BRAVO_WPA2-PSK-pool             disabled=no  interface=vlan60-BRAVO_WPA2-PSK             lease-time=3h  name=vlan60-BRAVO_WPA2-PSK-dhcp
+add address-pool=vlan70-CHARLIE_802.1X-PEAP-pool        disabled=no  interface=vlan70-CHARLIE_802.1X-PEAP        lease-time=3h  name=vlan70-CHARLIE_802.1X-PEAP-dhcp
+add address-pool=vlan80-DELTA_HOTSPOT-WISPr-pool        disabled=no  interface=vlan80-DELTA_HOTSPOT-WISPr        lease-time=3h  name=vlan80-DELTA_HOTSPOT-WISPr-dhcp
+add address-pool=vlan90-ECHO_HOTSPOT2.0-PASSPOINT-pool  disabled=no  interface=vlan90-ECHO_HOTSPOT2.0-PASSPOINT  lease-time=3h  name=vlan90-ECHO_HOTSPOT2.0-PASSPOINT-dhcp
+add address-pool=vlan66-HONEYPOT-pool                   disabled=no  interface=vlan66-HONEYPOT                   lease-time=3h  name=vlan66-HONEYPOT-dhcp
 #
 #############################
 # + DHCP NETWORKS FOR DHCP OFFER
@@ -309,16 +313,16 @@ add address-pool=vlan66-HONEYPOT-pool disabled=no  interface=vlan66-HONEYPOT    
 #
 # << MANAGEMENT >>
 #
-add address=10.10.0.0/24 comment=vlan1-MGMT        dns-server=8.8.8.8,1.1.1.1 gateway=10.10.0.1
+add address=10.10.0.0/24 comment=vlan10-MANAGEMENT                 dns-server=8.8.8.8,1.1.1.1 gateway=10.10.0.1
 #
 # << VLANS >>
 #
-add address=10.50.0.0/16 comment=vlan5-STATION     dns-server=8.8.8.8,1.1.1.1 gateway=10.50.0.1
-add address=10.60.0.0/16 comment=vlan6-MEGACABLE   dns-server=8.8.8.8,1.1.1.1 gateway=10.60.0.1
-add address=10.70.0.0/16 comment=vlan7-TOTALZONE   dns-server=8.8.8.8,1.1.1.1 gateway=10.70.0.1
-add address=10.80.0.0/16 comment=vlan8-PREMIUM     dns-server=8.8.8.8,1.1.1.1 gateway=10.80.0.1
-add address=10.90.0.0/16 comment=vlan9-PASSPOINT   dns-server=8.8.8.8,1.1.1.1 gateway=10.90.0.1
-add address=10.66.0.0/16 comment=vlan66-HONEYPOT   dns-server=8.8.8.8,1.1.1.1 gateway=10.66.0.1
+add address=10.50.0.0/16 comment=vlan50-ALFA_OPEN                  dns-server=8.8.8.8,1.1.1.1 gateway=10.50.0.1
+add address=10.60.0.0/16 comment=vlan60-BRAVO_WPA2-PSK             dns-server=8.8.8.8,1.1.1.1 gateway=10.60.0.1
+add address=10.70.0.0/16 comment=vlan70-CHARLIE_802.1X-PEAP        dns-server=8.8.8.8,1.1.1.1 gateway=10.70.0.1
+add address=10.80.0.0/16 comment=vlan80-DELTA_HOTSPOT-WISPr        dns-server=8.8.8.8,1.1.1.1 gateway=10.80.0.1
+add address=10.90.0.0/16 comment=vlan90-ECHO_HOTSPOT2.0-PASSPOINT  dns-server=8.8.8.8,1.1.1.1 gateway=10.90.0.1
+add address=10.66.0.0/16 comment=vlan66-HONEYPOT                   dns-server=8.8.8.8,1.1.1.1 gateway=10.66.0.1
 #
 #############################################################################################
 #  + DNS
@@ -341,41 +345,5 @@ set allow-none-crypto=yes forwarding-enabled=remote
 /ip neighbor discovery-settings
 set discover-interface-list=!dynamic
 #
-#############################################################################################
-#  + LOOPBACK BRIDGE FOR: VPN IPSEC & MONITORING
-#############################################################################################
-#
-# :IMPORNTANT-1: VPN CLIENT/SERVER IP ADDRESSES MUST BE ADJUSTED TO DESIRED SETTINGS
-#
-# :IMPORNTANT-2: ONCE YOU HAVE FINISHED COPYING THE SCRIPT, GO TO UI > IPSEC > ENABLE VPN
-#
-# :IMPORNTANT-3: IF VPN IS NOT ACTIVATED AFTER CONFIG IN UI, INTERNET SERVICE WILL STILL AVAILABLE YAI! 
-#
 
-#############################################################################################
-#  + NAT & ROUTING (ACTIVATE INTERNET SERVICE FOR THE LAN & VPN CONNECTION)
-#############################################################################################
-#
-# :IMPORTANT: USE THE SAME IP ADDRESS USED BY IPSEC VPN CLIENT FOR SOURCE ADDRESS (EG. 172.16.38.19)
-#
-/ip firewall nat
-#
-#
-# % NAT FOR LAN/VLANS INTERNET WAN1_ether1 & WAN2_ether2
-#
-add action=masquerade chain=srcnat out-interface=WAN1_ether1
-add action=masquerade chain=srcnat out-interface=WAN2_ether2
-#
-#
-#############################################################################################
-#  + ADMIN , USERS , PASSWORDS
-#############################################################################################
-#
-#/user add       name=Fz3r0 group=full password=mikro123 
-#
-#/user set [find name=admin]           password=mikro123
-#
-#############################################################################################
-#  + FINISH!!!
-#############################################################################################
-# - - - - - - - - - - - - - - - END COPY - - - - - - - - - - - - - - - #
+    
